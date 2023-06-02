@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <link rel="stylesheet" href="style.css"></link>
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo2.png" alt="logo" >
+            <div class="image-wrapper">
+                <a href="https://github.com/BritoParedes17" target="_blank"><img src="img/github.png" alt="github"></a>
+                <a style="margin-left: 35px;" href="https://www.linkedin.com/in/gabrielbritop/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+            </div>
+        </header>
+        <main>
+            <h2 class="titulos">Encriptador <i class="fas fa-lock"></i></h2>
+            <div class="contenedor">
+                <section class="contenedor-text-area">
+                    <div><h6 class="informacion">No usar minisculas y acentos</h6></div>
+                    <textarea class="text-area" rows="5" placeholder="Ingrese su texto"></textarea>
+                    <div class="botones">
+                        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </section>
+                <section  class="contenedor-text-area">
+                    <div><h6 class="informacion">Su texto significa</h6></div>
+                    <textarea rows="5" class="mensaje"></textarea>
+                    <div class="botones">
+                        <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                    </div>
+                </section>
+            </div>
+            <div id="errorAlert" class="errorAlert">
+                <p class="alertText"><i class="fas fa-exclamation-circle" aria-hidden="true"></i> Error</p>
+                <p class="alertText">Solo se permite letras minusculas y sin acentos por el momento</p>
+                <button class="btn-encriptar" onclick="hideErrorAlert()">Cerrar</button>
+            </div>
+            <div id="copyAlert" class="errorAlert">
+                <p class="alertText"> ʕっ•ᴥ•ʔっ Texto Copiado</p>
+                <button class="btn-encriptar" onclick="hideCopyAlert()">Cerrar</button>
+            </div>
+        </main>
+        <footer id="footer" class="footer">
+            <a class="thanks" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+            
+            <a class="thanks" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect"> Pixel perfect from</a> <a class="thanks" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
